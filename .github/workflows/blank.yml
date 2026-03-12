@@ -20,6 +20,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "test" > "FILE${RANDOM}".txt
+          git config --global user.email "tedv@live.com"
+          git config --global user.name "ted"
+
           git add .
           git commit -m "test"
           git push
